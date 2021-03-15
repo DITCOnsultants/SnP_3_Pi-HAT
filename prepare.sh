@@ -1,2 +1,5 @@
 #!/bin/sh
-echo "Hier komt de prepare.sh welke zal zorgen dat je raspberry voorzien wordt van de juiste packages voor de workshop :)"
+iw wlan0 set power_save off
+apt update
+apt install python3-pip pigpio python3-smbus
+pip3 install bme280pi RPi.gpio pigpio requests
