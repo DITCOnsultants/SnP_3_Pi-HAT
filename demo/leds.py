@@ -26,4 +26,7 @@ try:
         GPIO.output(led_blauw,1)
         time.sleep(1)
 except:
+    for i in [led_groen, led_geel, led_rood, led_blauw]:
+        GPIO.output(i, 0)
+
     GPIO.cleanup()
