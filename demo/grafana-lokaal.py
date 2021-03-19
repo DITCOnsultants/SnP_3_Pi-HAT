@@ -5,7 +5,7 @@ locatie = "Home"
 naam = "Home"
 
 sensor = bme280pi.Sensor()
-db = InfluxDBClient('localhost',8086,database='grafana', ssl=True, username='myadminuser', password='veryverysecret')
+db = InfluxDBClient('localhost',8086,database='grafana', ssl=False, username='myadminuser', password='veryverysecret')
 
 while True:
     try:
